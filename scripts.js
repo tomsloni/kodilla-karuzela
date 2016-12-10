@@ -1,5 +1,7 @@
-var carouselList = $('#carousel ul');
+var carouselList = $('#carousel > ul');
 var loading = $('#carousel > i');
+// var carouselNavList = $('.carousel-nav');
+
 
 $(function() {
 	setInterval(rollSlideRight, 6000);
@@ -28,6 +30,7 @@ function rollSlideRight() {
 		500,
 		rollFirstSlide
 		);
+//	updateNavigation();
 }
 
 function rollLastSlide() {
@@ -40,11 +43,26 @@ function rollLastSlide() {
 
 function rollSlideLeft() {
 	loading.css('display','initial');
-/*	rollLastSlide(); */
 	carouselList.animate(	
 		{'marginLeft': 0},
 		500,
 		rollLastSlide
 		);
+//	updateNavigation();
 }
 
+/*
+function updateNavigation() {
+	$.each(carouselNavList, function(element) {
+		(element).append(carouselList);
+	});
+}
+
+
+var imageNum = [0, 1, 2, 3, 4, 5];
+
+function slideDots(imageNum) {
+
+}
+
+*/

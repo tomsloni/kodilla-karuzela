@@ -3,20 +3,6 @@
 	margin: 0;
 }
 
-ul {
-	width: 2000px;
-	height: 300px;
-	padding: 0;
-	margin: 0 0 0 -400px;
-	overflow: hidden;
-
-}
-li {
-	width: 400px;
-	height: 300px;
-	list-style-type: none;
-	float: left;
-}
 .cinema {
 	margin: 30vh auto 0;
 	width: 560px;
@@ -38,17 +24,34 @@ li {
 	padding-left: 0;
 	width: 400px;
 	height: 300px;
-	overflow: hidden; 
+	overflow: hidden;
 	position: relative;
 	line-height: 300px;
 	font-size: 45px;
 	color: white;
 }
 
+#carousel > ul {
+	width: 2000px;
+	height: 300px;
+	padding: 0;
+	margin: 0 0 0 -400px;
+	overflow: hidden;
+
+}
+#carousel > ul li {
+	width: 400px;
+	height: 300px;
+	list-style-type: none;
+	float: left;
+}
+
 #carousel img {
 	height: 100%;
 	padding: 0;
 }
+
+
 
 [class*="-hand"] {
 	width: 20%;
@@ -69,13 +72,32 @@ li {
 }
 
 .left-hand {
-	left: 0.5vw;
+	left: 0;
 }
 
 .right-hand {
 	left: 80%;
 }
+/*
+.carusel-nav ul {
+	width: 60%;
+	height: 10%;
+	margin: 0 auto;
+	border: 3px solid white;
+	border-radius: 10px;
+}
 
+.carousel-nav li {
+	list-style-type: none;
+	padding: 0;
+	font-size: 15px;
+	float: left;
+	width: 30px;
+	height: 30px;
+	color: blue;
+	z-index: 100;
+}
+*/
 #carousel > i {
 	position: absolute;
 	font-size: 40px;
